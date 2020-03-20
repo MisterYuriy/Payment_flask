@@ -12,4 +12,4 @@ handler_payments.setFormatter(logging.Formatter('%(asctime)s -  %(levelname)s - 
 app.logger.setLevel(logging.INFO)
 app.logger.addHandler(handler_payments)
 
-app.run()
+app.run(debug=True, port=33897)
