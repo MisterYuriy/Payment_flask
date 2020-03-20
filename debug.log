@@ -1,0 +1,4 @@
+ * Running on http://localhost:8888/ (Press CTRL+C to quit)
+127.0.0.1 - - [20/Mar/2020 16:26:23] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Mar/2020 16:26:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Mar/2020 16:26:27] "[37mPOST /action HTTP/1.1[0m" 200 -
