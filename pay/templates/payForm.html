@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <form name="Pay" method="post" action={{pay.url}} accept-charset="UTF-8">
+        <input type="hidden" name="amount" value={{pay.amount}}>
+        <input type="hidden" name="currency" value={{pay.currency}}>
+        <input type="hidden" name="shop_id" value={{pay.shop_id}}>
+        <input type="hidden" name="sign" value={{pay.sign}}>
+        <input type="hidden" name="shop_order_id" value={{pay.shop_order_id}}>
+        <input type="hidden" name="description" value={{pay.description}}>
+        <input type="submit"  value="Test invoice">
+    </form>
+{% endblock %}

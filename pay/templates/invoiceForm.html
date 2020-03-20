@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <form method={{invoice.method}} action={{invoice.url}}>
+        <input type="hidden" name="lang" value={{invoice.lang}}>
+        <input type="hidden" name="m_curorderid" value={{invoice.m_curorderid}}>
+        <input type="hidden" name="m_historyid" value={{invoice.m_historyid}}>
+        <input type="hidden" name="m_historytm" value={{invoice.m_historytm}}>
+        <input type="hidden" name="referer" value={{invoice.referer}}>
+        <input type="submit"  value="Test invoice">
+    </form>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <form action="http://localhost:8888/action" method="post">
+      <div class="form-group row">
+        <label class="col-4 col-form-label" for="payAmount">Сумма оплаты</label>
+        <div class="col-8">
+          <input id="payAmount" name="payAmount" placeholder="0.00" type="number" min="0.01" step="0.01" required="required" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="payCurrency" class="col-4 col-form-label">Валюта оплаты</label>
+        <div class="col-8">
+          <select id="payCurrency" name="payCurrency" required="required" class="custom-select">
+            <option value="978">EUR</option>
+            <option value="840">USD</option>
+            <option value="643">RUB</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="description" class="col-4 col-form-label">Описание товара</label>
+        <div class="col-8">
+          <textarea id="description" name="description" placeholder="Test invoice" cols="40" rows="5" class="form-control" required="required"></textarea>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-4 col-8">
+          <button name="submit" type="submit" class="btn btn-primary">Оплатить</button>
+        </div>
+      </div>
+    </form>
+{% endblock %}
