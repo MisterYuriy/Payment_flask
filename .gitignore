@@ -1,3 +1,5 @@
 *.db
 *.log
 venv
+.idea
+__pycache__
